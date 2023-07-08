@@ -1,20 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-init_x = x;
-init_y = y;
-init_depth = depth;
 
-enum ELEMENTS
-{
-	NORMAL,
-	FIRE,
-	ICE,
-	ELEC
-}
-
-
-position = position;
-
+// Constantly update
 var _struct = obj_globalcontroller.catalog[obj_globalcontroller.page][position];
 
 properties = {
@@ -23,5 +10,3 @@ properties = {
 	element : _struct.element,
 	cost : _struct.cost
 }
-
-being_carried = false;

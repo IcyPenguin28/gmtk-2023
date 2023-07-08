@@ -4,9 +4,10 @@ if instance_place(x, y, obj_cart)
 {
 	var _inst = instance_place(x, y, obj_cart);
 	_inst.num_items ++;
-	array_push(_inst.items, properties)
+	array_push(_inst.items, properties);
 	_inst.total_cost += properties.cost;
 	instance_destroy();
+	show_debug_message(_inst.items);
 }
 else
 {
