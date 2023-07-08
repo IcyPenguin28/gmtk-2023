@@ -26,6 +26,8 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Main Menu UI","folderPath":"folders/Sprites/Main Menu UI.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Bases","folderPath":"folders/Sprites/Main Menu UI/Bases.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,
@@ -43,7 +45,8 @@
     {"id":{"name":"rm_moveselect","path":"rooms/rm_moveselect/rm_moveselect.yy",},},
     {"id":{"name":"rm_baseselect","path":"rooms/rm_baseselect/rm_baseselect.yy",},},
     {"id":{"name":"rm_fight","path":"rooms/rm_fight/rm_fight.yy",},},
-    {"id":{"name":"mus_mainmenu","path":"sounds/mus_mainmenu/mus_mainmenu.yy",},},
+    {"id":{"name":"fnt_tooltip","path":"fonts/fnt_tooltip/fnt_tooltip.yy",},},
+    {"id":{"name":"snd_mainmenu","path":"sounds/snd_mainmenu/snd_mainmenu.yy",},},
     {"id":{"name":"rm_mainmenu","path":"rooms/rm_mainmenu/rm_mainmenu.yy",},},
   ],
   "RoomOrderNodes": [

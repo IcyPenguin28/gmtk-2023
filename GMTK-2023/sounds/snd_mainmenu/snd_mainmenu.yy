@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "mus_mainmenu",
+  "name": "snd_mainmenu",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -17,7 +17,7 @@
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "mus_mainmenu.ogg",
+  "soundFile": "snd_mainmenu.ogg",
   "type": 0,
   "volume": 1.0,
 }

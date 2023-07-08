@@ -4,8 +4,10 @@
 enum BASES
 {
 	DRAGON,
-	ROBOT,
+	YETI,
 	SLIME
 }
 
-active_base = BASES.DRAGON	// The current base monster the player has enabled
+base_count = 3;	// The number of base characters in the enum
+active_base = BASES.DRAGON;	// The current base monster the player has enabled
+tooltip = ""

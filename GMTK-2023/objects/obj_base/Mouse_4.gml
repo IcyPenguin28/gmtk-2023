@@ -2,4 +2,11 @@
 // You can write your code in this editor
 
 // Player clicked on base image on main menu, go to base select
-room_goto(rm_baseselect);
+if active_base == base_count - 1
+{
+	active_base = 0;
+}
+else
+{
+	active_base ++;
+}
