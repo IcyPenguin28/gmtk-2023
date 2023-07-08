@@ -22,9 +22,9 @@ if position_meeting(mouse_x, mouse_y, self)
 	draw_set_font(fnt_tooltip);
 	// Display tooltip
 	draw_set_color(c_black);
-	draw_text(mouse_x + 14, mouse_y + 1, tooltip + "\n Click to change base characters");
+	draw_text(mouse_x + 14, mouse_y + 1, tooltip + "\nClick to change base characters");
 	draw_set_color(c_white);
-	draw_text(mouse_x + 14, mouse_y, tooltip + "\n Click to change base characters");
+	draw_text(mouse_x + 14, mouse_y, tooltip + "\nClick to change base characters");
 }
 else
 {

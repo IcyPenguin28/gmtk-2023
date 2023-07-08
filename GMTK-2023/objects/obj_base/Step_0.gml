@@ -13,6 +13,6 @@ switch active_base
 		tooltip = "SLIME KING:\nResists electric attacks, but is weak to ice"
 		break;
 	default:
-		tooltip = "ERROR: You should not see this lol"
+		tooltip = "ERROR:\nYou should not see this lol"
 		break;
 }
