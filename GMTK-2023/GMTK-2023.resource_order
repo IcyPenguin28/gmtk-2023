@@ -16,5 +16,13 @@
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
-  "ResourceOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"spr_slimeking","order":1,"path":"sprites/spr_slimeking/spr_slimeking.yy",},
+    {"name":"rm_shop","order":4,"path":"rooms/rm_shop/rm_shop.yy",},
+    {"name":"spr_baseframe","order":2,"path":"sprites/spr_baseframe/spr_baseframe.yy",},
+    {"name":"spr_errorbase","order":3,"path":"sprites/spr_errorbase/spr_errorbase.yy",},
+    {"name":"rm_moveselect","order":1,"path":"rooms/rm_moveselect/rm_moveselect.yy",},
+    {"name":"rm_baseselect","order":2,"path":"rooms/rm_baseselect/rm_baseselect.yy",},
+    {"name":"rm_fight","order":3,"path":"rooms/rm_fight/rm_fight.yy",},
+  ],
 }
