@@ -22,7 +22,7 @@ page = 0;
 // Each array of structs in this array is its own page of 4 move blocks in the shop
 catalog = [
 	[
-		{name : "CHEESE\nBURGER", tooltip : "Mmmmmm...\nRestores 25% HP.", element : 0, cost : 3500},
+		{name : "CHEESE-\nBURGER", tooltip : "Mmmmmm...\nRestores 25% HP.", element : 0, cost : 3500},
 		{name : "FLAME\nCANNON", tooltip : "Crispen those gnomes with a fiery blast!\nTargets a single Gnome for Fire damage.", element : 1, cost : 2500},
 		{name : "ICICLE\nIMPACT", tooltip : "Need to leave the gnomes frozen in their tracks?\nTargets a single Gnome for Ice damage.", element : 2, cost : 2500},
 		{name : "ANODE\nRIG", tooltip : "This will give those little tricksters a shock!\nTargets a single Gnome for Electric damage.", element : 3, cost : 2500}
@@ -40,3 +40,11 @@ catalog = [
 		{name : "GIGA\nSLASH", tooltip : "Slice 'n' dicin' time!\nDeals Neutral damage to all Gnomes.", element : 0, cost : 3500}
 	]
 ];
+
+randomize();
+
+next_encounter = {
+	strength : irandom_range(0, 3),
+	weakness : irandom_range(0, 3),
+	reward : choose(1000, 2500, 4000, 5500)
+};

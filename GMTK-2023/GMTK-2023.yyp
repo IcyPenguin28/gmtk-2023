@@ -61,6 +61,7 @@
     {"id":{"name":"obj_shopprevbutton","path":"objects/obj_shopprevbutton/obj_shopprevbutton.yy",},},
     {"id":{"name":"spr_icon_fire","path":"sprites/spr_icon_fire/spr_icon_fire.yy",},},
     {"id":{"name":"spr_cart","path":"sprites/spr_cart/spr_cart.yy",},},
+    {"id":{"name":"fnt_tooltipsmall","path":"fonts/fnt_tooltipsmall/fnt_tooltipsmall.yy",},},
     {"id":{"name":"snd_purchase","path":"sounds/snd_purchase/snd_purchase.yy",},},
     {"id":{"name":"rm_shop","path":"rooms/rm_shop/rm_shop.yy",},},
     {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},},
