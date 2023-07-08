@@ -1,6 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
-total_funds = 5000;
+enum ELEMENTS
+{
+	NORMAL,
+	FIRE,
+	ICE,
+	ELEC
+}
+
+total_funds = 10000;
 
 base = BASES.DRAGON;
 slot1 = noone;

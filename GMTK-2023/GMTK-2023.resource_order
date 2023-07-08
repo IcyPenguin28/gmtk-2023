@@ -28,6 +28,7 @@
   "ResourceOrderSettings": [
     {"name":"obj_shopnextbutton","order":3,"path":"objects/obj_shopnextbutton/obj_shopnextbutton.yy",},
     {"name":"obj_button","order":1,"path":"objects/obj_button/obj_button.yy",},
+    {"name":"rm_init","order":5,"path":"rooms/rm_init/rm_init.yy",},
     {"name":"remove_basketed_items","order":2,"path":"scripts/remove_basketed_items/remove_basketed_items.yy",},
     {"name":"spr_icon_elec","order":3,"path":"sprites/spr_icon_elec/spr_icon_elec.yy",},
     {"name":"obj_shopbutton","order":2,"path":"objects/obj_shopbutton/obj_shopbutton.yy",},
@@ -42,6 +43,7 @@
     {"name":"rm_shop","order":4,"path":"rooms/rm_shop/rm_shop.yy",},
     {"name":"spr_button","order":5,"path":"sprites/spr_button/spr_button.yy",},
     {"name":"spr_moveblock_blue","order":1,"path":"sprites/spr_moveblock_blue/spr_moveblock_blue.yy",},
+    {"name":"obj_moveblock_menu","order":9,"path":"objects/obj_moveblock_menu/obj_moveblock_menu.yy",},
     {"name":"spr_firedragon","order":1,"path":"sprites/spr_firedragon/spr_firedragon.yy",},
     {"name":"spr_errorbase","order":2,"path":"sprites/spr_errorbase/spr_errorbase.yy",},
     {"name":"remove_purchased_items","order":1,"path":"scripts/remove_purchased_items/remove_purchased_items.yy",},
@@ -49,6 +51,7 @@
     {"name":"spr_arrowbutton","order":6,"path":"sprites/spr_arrowbutton/spr_arrowbutton.yy",},
     {"name":"obj_cart","order":7,"path":"objects/obj_cart/obj_cart.yy",},
     {"name":"spr_yeti","order":4,"path":"sprites/spr_yeti/spr_yeti.yy",},
+    {"name":"spr_moveblock_empty","order":4,"path":"sprites/spr_moveblock_empty/spr_moveblock_empty.yy",},
     {"name":"snd_poor","order":2,"path":"sounds/snd_poor/snd_poor.yy",},
     {"name":"rm_fight","order":3,"path":"rooms/rm_fight/rm_fight.yy",},
     {"name":"spr_moveblock_yellow","order":2,"path":"sprites/spr_moveblock_yellow/spr_moveblock_yellow.yy",},

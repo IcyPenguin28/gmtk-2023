@@ -10,6 +10,8 @@
     {"name":"inst_6F1A4C90","path":"rooms/rm_mainmenu/rm_mainmenu.yy",},
     {"name":"inst_53CA26B5","path":"rooms/rm_mainmenu/rm_mainmenu.yy",},
     {"name":"inst_74BC6C4","path":"rooms/rm_mainmenu/rm_mainmenu.yy",},
+    {"name":"inst_58604B20","path":"rooms/rm_mainmenu/rm_mainmenu.yy",},
+    {"name":"inst_32E381CE","path":"rooms/rm_mainmenu/rm_mainmenu.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -17,6 +19,13 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6F1A4C90","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_base","path":"objects/obj_base/obj_base.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":64.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_53CA26B5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_shopbutton","path":"objects/obj_shopbutton/obj_shopbutton.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":288.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_74BC6C4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_globalcontroller","path":"objects/obj_globalcontroller/obj_globalcontroller.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_58604B20","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_moveblock_menu","path":"objects/obj_moveblock_menu/obj_moveblock_menu.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_moveblock_menu","path":"objects/obj_moveblock_menu/obj_moveblock_menu.yy",},"propertyId":{"name":"partner","path":"objects/obj_moveblock_menu/obj_moveblock_menu.yy",},"value":"inst_32E381CE",},
+          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":352.0,"y":64.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_32E381CE","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_moveblock_menu","path":"objects/obj_moveblock_menu/obj_moveblock_menu.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_moveblock_menu","path":"objects/obj_moveblock_menu/obj_moveblock_menu.yy",},"propertyId":{"name":"move_slot","path":"objects/obj_moveblock_menu/obj_moveblock_menu.yy",},"value":"1",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_moveblock_menu","path":"objects/obj_moveblock_menu/obj_moveblock_menu.yy",},"propertyId":{"name":"partner","path":"objects/obj_moveblock_menu/obj_moveblock_menu.yy",},"value":"inst_58604B20",},
+          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":352.0,"y":192.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4286216857,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":{"name":"spr_shopbg","path":"sprites/spr_shopbg/spr_shopbg.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":true,"x":0,"y":0,},
   ],

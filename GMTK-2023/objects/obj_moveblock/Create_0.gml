@@ -4,14 +4,6 @@ init_x = x;
 init_y = y;
 init_depth = depth;
 
-enum ELEMENTS
-{
-	NORMAL,
-	FIRE,
-	ICE,
-	ELEC
-}
-
 
 position = position;
 
