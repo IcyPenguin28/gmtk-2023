@@ -2,17 +2,46 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "rm_shop",
-  "creationCodeFile": "",
+  "creationCodeFile": "rooms/rm_shop/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,
   "instanceCreationOrder": [
     {"name":"inst_3E246C6B","path":"rooms/rm_shop/rm_shop.yy",},
+    {"name":"inst_8044E90","path":"rooms/rm_shop/rm_shop.yy",},
+    {"name":"inst_45C01030","path":"rooms/rm_shop/rm_shop.yy",},
+    {"name":"inst_5F4AF201","path":"rooms/rm_shop/rm_shop.yy",},
+    {"name":"inst_6FC3687B","path":"rooms/rm_shop/rm_shop.yy",},
+    {"name":"inst_1D0B12F2","path":"rooms/rm_shop/rm_shop.yy",},
   ],
   "isDnd": false,
   "layers": [
-    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3E246C6B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_backbutton","path":"objects/obj_backbutton/obj_backbutton.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":288.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_8044E90","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_moveblock","path":"objects/obj_moveblock/obj_moveblock.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_moveblock","path":"objects/obj_moveblock/obj_moveblock.yy",},"propertyId":{"name":"name","path":"objects/obj_moveblock/obj_moveblock.yy",},"value":"CHEESE\\nBURGER",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_moveblock","path":"objects/obj_moveblock/obj_moveblock.yy",},"propertyId":{"name":"tooltip","path":"objects/obj_moveblock/obj_moveblock.yy",},"value":"Mmmmmm...\\nRestores 25% HP.",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_moveblock","path":"objects/obj_moveblock/obj_moveblock.yy",},"propertyId":{"name":"cost","path":"objects/obj_moveblock/obj_moveblock.yy",},"value":"3500",},
+          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":192.0,"y":64.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_45C01030","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_moveblock","path":"objects/obj_moveblock/obj_moveblock.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_moveblock","path":"objects/obj_moveblock/obj_moveblock.yy",},"propertyId":{"name":"name","path":"objects/obj_moveblock/obj_moveblock.yy",},"value":"FLAME\\nCANNON",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_moveblock","path":"objects/obj_moveblock/obj_moveblock.yy",},"propertyId":{"name":"tooltip","path":"objects/obj_moveblock/obj_moveblock.yy",},"value":"Crispen those gnomes with a fiery blast!\\nThis move targets a single Gnome for Fire damage.",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_moveblock","path":"objects/obj_moveblock/obj_moveblock.yy",},"propertyId":{"name":"element","path":"objects/obj_moveblock/obj_moveblock.yy",},"value":"1",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_moveblock","path":"objects/obj_moveblock/obj_moveblock.yy",},"propertyId":{"name":"cost","path":"objects/obj_moveblock/obj_moveblock.yy",},"value":"2500",},
+          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":448.0,"y":64.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5F4AF201","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_cart","path":"objects/obj_cart/obj_cart.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":576.0,"y":288.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6FC3687B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_moveblock","path":"objects/obj_moveblock/obj_moveblock.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_moveblock","path":"objects/obj_moveblock/obj_moveblock.yy",},"propertyId":{"name":"name","path":"objects/obj_moveblock/obj_moveblock.yy",},"value":"ANODE\\nRIG",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_moveblock","path":"objects/obj_moveblock/obj_moveblock.yy",},"propertyId":{"name":"tooltip","path":"objects/obj_moveblock/obj_moveblock.yy",},"value":"This will give those little tricksters a shock!\\nDeals Electric damage to a single Gnome.",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_moveblock","path":"objects/obj_moveblock/obj_moveblock.yy",},"propertyId":{"name":"element","path":"objects/obj_moveblock/obj_moveblock.yy",},"value":"3",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_moveblock","path":"objects/obj_moveblock/obj_moveblock.yy",},"propertyId":{"name":"cost","path":"objects/obj_moveblock/obj_moveblock.yy",},"value":"2500",},
+          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":448.0,"y":176.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1D0B12F2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_moveblock","path":"objects/obj_moveblock/obj_moveblock.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_moveblock","path":"objects/obj_moveblock/obj_moveblock.yy",},"propertyId":{"name":"name","path":"objects/obj_moveblock/obj_moveblock.yy",},"value":"ICICLE\\nIMPACT",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_moveblock","path":"objects/obj_moveblock/obj_moveblock.yy",},"propertyId":{"name":"tooltip","path":"objects/obj_moveblock/obj_moveblock.yy",},"value":"Need to leave the gnomes frozen in their tracks?\\nThis move will deal Ice damage to one of those foul creatures.",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_moveblock","path":"objects/obj_moveblock/obj_moveblock.yy",},"propertyId":{"name":"element","path":"objects/obj_moveblock/obj_moveblock.yy",},"value":"2",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_moveblock","path":"objects/obj_moveblock/obj_moveblock.yy",},"propertyId":{"name":"cost","path":"objects/obj_moveblock/obj_moveblock.yy",},"value":"2500",},
+          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":192.0,"y":176.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4282993043,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],

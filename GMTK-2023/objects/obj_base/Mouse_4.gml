@@ -10,3 +10,5 @@ else
 {
 	active_base ++;
 }
+
+obj_globalcontroller.base = active_base;

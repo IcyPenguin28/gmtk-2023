@@ -5,4 +5,4 @@
 event_inherited();
 
 // Perform the specific action
-room_goto(rm_shop);
+room_goto(rm_mainmenu);

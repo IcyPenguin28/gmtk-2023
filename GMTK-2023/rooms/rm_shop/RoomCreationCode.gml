@@ -1,0 +1,1 @@
+remove_purchased_items();

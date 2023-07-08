@@ -12,7 +12,7 @@ if position_meeting(mouse_x, mouse_y, self)
 {
 	window_set_cursor(cr_handpoint);
 }
-else if !position_meeting(mouse_x, mouse_y, obj_base)
+else if !position_meeting(mouse_x, mouse_y, obj_base) && !position_meeting(mouse_x, mouse_y, obj_moveblock)
 {
 	window_set_cursor(cr_default);	
 }
