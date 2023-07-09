@@ -20,3 +20,23 @@ for (var i = 0; i < _encounter.allies; i++;) {
 
 array_shuffle_ext(enemies)
 show_debug_message(enemies)
+
+
+// Gnome Spawning Coords
+// [x1, y1, ..., xn, yn]	where n is the number of gnomes on the field
+spawn_coords = [
+	[320],	// 1 gnome
+	[256, 384],	// 2 gnomes
+	[256, 320, 384],	// 3 gnomes
+	[160, 256, 384, 480]	// take a wild guess
+];
+
+// Summon gnomes onto the battlefield
+for (var i = 0; i < array_length(enemies); i++;)
+{
+	with (instance_create_layer(spawn_coords[array_length(enemies) - 1][instance_number(obj_gnome)], 160, "Instances", obj_gnome))
+	{
+		type = obj_fightcontroller.enemies[i].type;
+		hp = obj_fightcontroller.enemies[i].hp;
+	}
+}
