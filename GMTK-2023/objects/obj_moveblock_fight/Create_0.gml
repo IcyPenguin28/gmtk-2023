@@ -8,7 +8,8 @@ properties = {
 	name : "",
 	tooltip : "You don't own a move!\nBuy a move from the shop!",
 	element : -1,
-	cost : 0
+	cost : 0,
+	selects_target : false
 }
 
 if move_slot == 0

@@ -2,4 +2,5 @@
 // You can write your code in this editor
 
 type = ELEMENTS.NORMAL;
-hp = 100;
+maxhp = 100;
+hp = maxhp;

@@ -23,7 +23,7 @@ show_debug_message(enemies)
 
 
 // Gnome Spawning Coords
-// [x1, y1, ..., xn, yn]	where n is the number of gnomes on the field
+// [x1,  ..., xn]	where n is the number of gnomes on the field
 spawn_coords = [
 	[320],	// 1 gnome
 	[256, 384],	// 2 gnomes
@@ -37,12 +37,31 @@ for (var i = 0; i < array_length(enemies); i++;)
 	with (instance_create_layer(spawn_coords[array_length(enemies) - 1][instance_number(obj_gnome)], 160, "Instances", obj_gnome))
 	{
 		type = obj_fightcontroller.enemies[i].type;
-		hp = obj_fightcontroller.enemies[i].hp;
+		maxhp = obj_fightcontroller.enemies[i].hp;
 	}
 }
 
-// Combat shit
+// Combat shit (it's 4 am and i hate my life)
 turn = -1;	// determines who's turn it is. First up is player (turn = 0), then goes through the enemies array.
 playeraction = noone;	// Will contain the properties of the player's chosen move for their turn
+targeting = false;	// Flag that will be true when the player has to select a target, otherwise will be false
 targets = [];	// Will contain every gnome that will be affected by the player's action
 created_moves = false;	// A flag that will become true when the player's moves have been displayed to them (prevents duplicates from being made due to step event)
+player_is_acting = false;	// A flag that will become true when the player has chosen both a move and a target (if applicable) This is when the move executes
+
+group_weakness = obj_globalcontroller.next_encounter.weakness;
+
+player_maxhp = 400;
+player_hp = player_maxhp;
+hubris = 0;	// Hubris multiplier. Used in attack and defense calculations
+iron_shield = 0;	// Will become 3 if player uses iron shield. Every turn, it goes down by 1. If its at 0, it will not give you the defense boost.
+
+active_enemies = [];	// Populated with the for loop below. Determines which enemies can still attack (i.e. which ones aren't dead af).
+
+for (var i = 0; i < instance_number(obj_gnome); i++;)
+{
+	array_push(active_enemies, instance_find(obj_gnome, i));
+}
+
+win = false;
+lose = false;

@@ -18,3 +18,11 @@ switch type
 		break;
 }
 
+if hp <= 0
+{
+	var _ind = array_get_index(obj_fightcontroller.active_enemies, id);
+	// array_delete(obj_fightcontroller.active_enemies, _ind, 1);
+	obj_fightcontroller.active_enemies[_ind] = noone;
+	show_debug_message(obj_fightcontroller.active_enemies);
+	instance_destroy();
+}

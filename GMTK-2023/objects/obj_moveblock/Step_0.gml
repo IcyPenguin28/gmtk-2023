@@ -8,5 +8,6 @@ properties = {
 	name : _struct.name,
 	tooltip : _struct.tooltip,
 	element : _struct.element,
-	cost : _struct.cost
+	cost : _struct.cost,
+	selects_target : _struct.selects_target
 }
