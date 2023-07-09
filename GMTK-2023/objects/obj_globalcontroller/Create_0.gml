@@ -52,8 +52,11 @@ do
 }
 until _weak != _str;
 
+var _rewards = [1000, 2500, 4000, 5500]
+var _allies = irandom_range(0, 3);
 next_encounter = {
 	strength : _str,
 	weakness : _weak,
-	reward : choose(1000, 2500, 4000, 5500)
+	allies : _allies,
+	reward : _rewards[_allies]
 };

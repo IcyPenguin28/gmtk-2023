@@ -4,7 +4,7 @@
 // Inherit the parent event
 event_inherited();
 
-if (array_length(obj_globalcontroller.unlocked_moves) >= 2)
+if (array_length(obj_globalcontroller.unlocked_moves) >= 1)
 {
 	room_goto(rm_fight);
 }

@@ -41,7 +41,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.6.0.89",
+    "IDEVersion": "2023.2.1.75",
   },
   "resources": [
     {"id":{"name":"obj_backbutton","path":"objects/obj_backbutton/obj_backbutton.yy",},},
@@ -53,7 +53,9 @@
     {"id":{"name":"spr_icon_elec","path":"sprites/spr_icon_elec/spr_icon_elec.yy",},},
     {"id":{"name":"obj_shopbutton","path":"objects/obj_shopbutton/obj_shopbutton.yy",},},
     {"id":{"name":"spr_coin","path":"sprites/spr_coin/spr_coin.yy",},},
+    {"id":{"name":"obj_fightcontroller","path":"objects/obj_fightcontroller/obj_fightcontroller.yy",},},
     {"id":{"name":"obj_base","path":"objects/obj_base/obj_base.yy",},},
+    {"id":{"name":"spr_fightbg","path":"sprites/spr_fightbg/spr_fightbg.yy",},},
     {"id":{"name":"spr_icon_ice","path":"sprites/spr_icon_ice/spr_icon_ice.yy",},},
     {"id":{"name":"spr_slimeking","path":"sprites/spr_slimeking/spr_slimeking.yy",},},
     {"id":{"name":"spr_shopbg","path":"sprites/spr_shopbg/spr_shopbg.yy",},},
