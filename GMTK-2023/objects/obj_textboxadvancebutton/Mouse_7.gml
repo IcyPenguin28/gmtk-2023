@@ -43,12 +43,26 @@ if obj_fightcontroller.iron_shield > 0
 	obj_fightcontroller.iron_shield --;
 }
 
-if instance_number(obj_gnome) == 0
-{
-	obj_fightcontroller.win = true;
+if instance_number(obj_gnome) == 0 && !win
+{	
+	obj_textbox.text = "You won! Here's " + string(obj_globalcontroller.next_encounter.reward) + "G\n, as promised!";
+	obj_globalcontroller.total_funds += obj_globalcontroller.next_encounter.reward;
+	audio_stop_sound(snd_battle);
+	audio_play_sound(snd_results, 0, true);
+	win = true;
 }
 
-if obj_fightcontroller.hp <= 0
+if win || lose
 {
-	obj_fightcontroller.lose = true;
+	randomize_next_encounter();
+	room_goto(rm_mainmenu);
+}
+
+if obj_fightcontroller.player_hp <= 0 && !lose
+{
+	obj_textbox.text = "The heroes defeated you...\nHere's 250G for your troubles...";
+	obj_globalcontroller.total_funds += 250;
+	audio_stop_sound(snd_battle);
+	audio_play_sound(snd_results, 0, true);
+	lose = true;
 }

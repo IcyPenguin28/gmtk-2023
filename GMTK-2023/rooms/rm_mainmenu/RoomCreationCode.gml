@@ -1,3 +1,4 @@
+audio_stop_sound(snd_results);
 if !audio_is_playing(snd_mainmenu)
 {
 	audio_play_sound(snd_mainmenu, 0, true);

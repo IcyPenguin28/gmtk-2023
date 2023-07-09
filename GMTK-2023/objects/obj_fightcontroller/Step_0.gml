@@ -1,6 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+// Player HP clamping
+if player_hp > player_maxhp
+{
+	player_hp = player_maxhp;
+}
+
 // Player turn handling
 if turn == 0
 {
@@ -84,14 +90,3 @@ if turn == 0
 		player_is_acting = false;
 	}
 }
-
-// Win condition handling
-if win
-{
-	
-}
-
-// Lose condition handling
-if lose
-{
-	

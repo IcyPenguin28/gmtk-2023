@@ -62,6 +62,3 @@ for (var i = 0; i < instance_number(obj_gnome); i++;)
 {
 	array_push(active_enemies, instance_find(obj_gnome, i));
 }
-
-win = false;
-lose = false;
