@@ -54,7 +54,7 @@ function execute_player_move(_move_name){
 				}
 				else
 				{
-					obj_textbox.text = _base_name + " used " + _move_name + "\nand got away with " + _stolen +"G!";
+					obj_textbox.text = _base_name + " used " + _move_name + "\nand got away with " + string(_stolen) +"G!";
 					obj_globalcontroller.next_encounter.reward -= _stolen;
 				}
 			}
