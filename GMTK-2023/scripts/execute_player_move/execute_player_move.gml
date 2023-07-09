@@ -26,6 +26,7 @@ function execute_player_move(_move_name){
 		case "CHEESE-\nBURGER":
 			obj_textbox.text = _base_name + " ate a CHEESEBURGER and\nrestored some HP!";
 			obj_fightcontroller.player_hp += (obj_fightcontroller.player_maxhp / 4);
+			if (obj_globalcontroller.base = BASES.SLIME) obj_fightcontroller.player_hp += (obj_fightcontroller.player_maxhp / 6);
 			break;
 		case "":
 			obj_textbox.text = _base_name + " did nothing!";
@@ -67,8 +68,10 @@ function execute_player_move(_move_name){
 				var _calced_dmg = 55*(random_range(0.85,1));
 				var _type = 0;
 				//multidamage moves do less
-				if (!playeraction.selects_target) _calced_dmg /= 1.5;
-				
+				if (!playeraction.selects_target && obj_globalcontroller.base != BASES.YETI) _calced_dmg *= 1.33;
+				if (!playeraction.selects_target && obj_globalcontroller.base != BASES.DRAGON) {
+					_calced_dmg /= 1.5;
+				}
 				// Group weakness, super effective
 				if obj_fightcontroller.playeraction.element == obj_fightcontroller.group_weakness
 				{

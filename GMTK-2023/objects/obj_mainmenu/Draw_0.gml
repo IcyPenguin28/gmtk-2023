@@ -8,3 +8,8 @@ draw_set_color(c_white);
 draw_text(5,347,"v"+GM_version)
 
 draw_sprite(characters[step],-1,character_x,190);
+
+draw_set_color(c_black);
+draw_text(240,350,"2023 IcyPenguin_ & Steve the Bartender")
+draw_set_color(c_white);
+draw_text(240,347,"2023 IcyPenguin_ & Steve the Bartender")

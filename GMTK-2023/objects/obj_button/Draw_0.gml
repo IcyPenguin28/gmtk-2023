@@ -7,7 +7,7 @@ draw_set_valign(fa_middle);
 draw_set_font(fnt_buttonlabel);
 draw_set_color(c_black);
 var drawpoint = 0;
-if (os_browser != browser_not_a_browser) drawpoint = -15;
+if (os_browser != browser_not_a_browser) drawpoint = -10;
 draw_text_ext(x, y+drawpoint, my_label,40,200);
 
 if position_meeting(mouse_x, mouse_y, self)
