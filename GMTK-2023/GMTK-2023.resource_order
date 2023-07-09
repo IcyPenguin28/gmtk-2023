@@ -53,6 +53,7 @@
     {"name":"obj_cart","order":7,"path":"objects/obj_cart/obj_cart.yy",},
     {"name":"spr_yeti","order":4,"path":"sprites/spr_yeti/spr_yeti.yy",},
     {"name":"spr_moveblock_empty","order":4,"path":"sprites/spr_moveblock_empty/spr_moveblock_empty.yy",},
+    {"name":"obj_goforthbutton","order":5,"path":"objects/obj_goforthbutton/obj_goforthbutton.yy",},
     {"name":"snd_poor","order":2,"path":"sounds/snd_poor/snd_poor.yy",},
     {"name":"rm_fight","order":3,"path":"rooms/rm_fight/rm_fight.yy",},
     {"name":"spr_moveblock_yellow","order":2,"path":"sprites/spr_moveblock_yellow/spr_moveblock_yellow.yy",},

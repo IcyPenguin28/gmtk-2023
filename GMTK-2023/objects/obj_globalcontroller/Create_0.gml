@@ -43,8 +43,17 @@ catalog = [
 
 randomize();
 
+var _str = irandom_range(0, 3);
+var _weak = irandom_range(0, 3);
+
+do
+{
+	_weak = irandom_range(0, 3);
+}
+until _weak != _str;
+
 next_encounter = {
-	strength : irandom_range(0, 3),
-	weakness : irandom_range(0, 3),
+	strength : _str,
+	weakness : _weak,
 	reward : choose(1000, 2500, 4000, 5500)
 };

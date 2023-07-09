@@ -76,6 +76,7 @@
     {"id":{"name":"obj_cart","path":"objects/obj_cart/obj_cart.yy",},},
     {"id":{"name":"spr_yeti","path":"sprites/spr_yeti/spr_yeti.yy",},},
     {"id":{"name":"spr_moveblock_empty","path":"sprites/spr_moveblock_empty/spr_moveblock_empty.yy",},},
+    {"id":{"name":"obj_goforthbutton","path":"objects/obj_goforthbutton/obj_goforthbutton.yy",},},
     {"id":{"name":"spr_icon_normal","path":"sprites/spr_icon_normal/spr_icon_normal.yy",},},
     {"id":{"name":"snd_poor","path":"sounds/snd_poor/snd_poor.yy",},},
     {"id":{"name":"rm_fight","path":"rooms/rm_fight/rm_fight.yy",},},
