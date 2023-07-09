@@ -21,7 +21,6 @@ function remove_purchased_items(){
 	{
 	   if array_contains(_strmovearr, string(_blockarr[i].properties))
 	   {
-		   show_debug_message(_blockarr[i].properties);
 		   instance_destroy(_blockarr[i]);
 	   }
 	}

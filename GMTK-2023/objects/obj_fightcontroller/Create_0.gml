@@ -15,7 +15,7 @@ for (var i = 0; i < _encounter.allies; i++;) {
 	var _type = _encounter.strength;
 	if (irandom_range(0,3) && i != 2) type = irandom_range(0,3);
 	//add to  array
-	array_push(enemies,new create_gnome(type));
+	array_push(enemies,new create_gnome(_type));
 }
 
 array_shuffle_ext(enemies)
@@ -40,3 +40,9 @@ for (var i = 0; i < array_length(enemies); i++;)
 		hp = obj_fightcontroller.enemies[i].hp;
 	}
 }
+
+// Combat shit
+turn = -1;	// determines who's turn it is. First up is player (turn = 0), then goes through the enemies array.
+playeraction = noone;	// Will contain the properties of the player's chosen move for their turn
+targets = [];	// Will contain every gnome that will be affected by the player's action
+created_moves = false;	// A flag that will become true when the player's moves have been displayed to them (prevents duplicates from being made due to step event)

@@ -15,7 +15,6 @@ if total_cost <= obj_globalcontroller.total_funds
 		array_push(obj_globalcontroller.unlocked_moves, items[i]);
 	}
 	
-	show_debug_message(obj_globalcontroller.unlocked_moves);
 	room_goto(rm_mainmenu);
 }
 else

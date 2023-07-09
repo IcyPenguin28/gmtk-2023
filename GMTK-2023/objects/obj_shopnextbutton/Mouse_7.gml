@@ -49,5 +49,3 @@ if !instance_place(448, 176, obj_moveblock)
 		position = 3;
 	}
 }
-
-show_debug_message(obj_globalcontroller.page);

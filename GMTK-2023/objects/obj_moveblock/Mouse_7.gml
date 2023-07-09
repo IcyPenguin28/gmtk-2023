@@ -7,7 +7,6 @@ if instance_place(x, y, obj_cart)
 	array_push(_inst.items, properties);
 	_inst.total_cost += properties.cost;
 	instance_destroy();
-	show_debug_message(_inst.items);
 }
 else
 {
