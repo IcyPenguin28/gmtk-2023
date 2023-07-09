@@ -65,6 +65,7 @@ function execute_player_move(_move_name){
 			{
 				// Calculate damage
 				var _calced_dmg = 55*(random_range(0.85,1));
+				var _type = 0;
 				//multidamage moves do less
 				if (!playeraction.selects_target) _calced_dmg /= 1.5;
 				
@@ -72,12 +73,14 @@ function execute_player_move(_move_name){
 				if obj_fightcontroller.playeraction.element == obj_fightcontroller.group_weakness
 				{
 					_calced_dmg *= 1.5;
+					_type = 1;
 					_calced_dmg = floor(_calced_dmg);
 				}
 				// Same-type, not very effective
 				else if targets[i].type == obj_fightcontroller.playeraction.element
 				{
 					_calced_dmg *= 0.5;
+					_type = -1;
 					_calced_dmg = floor(_calced_dmg);
 				}
 				
@@ -88,6 +91,19 @@ function execute_player_move(_move_name){
 				
 				// Deal the calced damage
 				targets[i].hp -= _calced_dmg;
+				
+				switch (_type) {
+					case 0:
+						audio_play_sound(snd_hit,2,false);
+						break;
+					case -1:
+						audio_play_sound(snd_weakattack,2,false);
+						break;
+					case 1:
+						audio_play_sound(snd_superattack,2,false);
+						break;
+				}
+				
 			}
 			break;
 	}

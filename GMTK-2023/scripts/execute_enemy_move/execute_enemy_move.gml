@@ -34,13 +34,14 @@ function execute_enemy_move(_enemy){
 	
 		// Calculate damage
 		var _calced_dmg = 25;
-				
+		var _type = 0;
 		// Super effective
 		if obj_globalcontroller.base == BASES.DRAGON && _enemy.type == ELEMENTS.ELEC ||
 			obj_globalcontroller.base == BASES.YETI && _enemy.type == ELEMENTS.FIRE ||
 			obj_globalcontroller.base == BASES.SLIME && _enemy.type == ELEMENTS.ICE
 		{
 			_calced_dmg *= 1.5;
+			_type = 1;
 			_calced_dmg = floor(_calced_dmg);
 		}
 		// Not very effective
@@ -49,20 +50,34 @@ function execute_enemy_move(_enemy){
 			obj_globalcontroller.base == BASES.SLIME && _enemy.type == ELEMENTS.ELEC
 		{
 			_calced_dmg *= 0.5;
+			_type = -1;
 			_calced_dmg = floor(_calced_dmg);
 		}
 				
 		if obj_fightcontroller.hubris > 0
 		{
 			_calced_dmg *= obj_fightcontroller.hubris;
+			_type = clamp(_type,0,1);
 		}
 	
 		if obj_fightcontroller.iron_shield > 0
 		{
 			_calced_dmg /= 3;
+			_type = -1;
 			_calced_dmg = floor(_calced_dmg);
 		}
-				
+		
+		switch (_type) {
+			case 0:
+				audio_play_sound(snd_hit,2,false);
+				break;
+			case -1:
+				audio_play_sound(snd_weakattack,2,false);
+				break;
+			case 1:
+				audio_play_sound(snd_superattack,2,false);
+				break;
+		}
 		// Deal the calced damage
 		obj_fightcontroller.player_hp -= _calced_dmg;
 	}
