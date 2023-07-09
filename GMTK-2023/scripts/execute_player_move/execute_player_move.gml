@@ -27,6 +27,9 @@ function execute_player_move(_move_name){
 			obj_textbox.text = _base_name + " ate a CHEESEBURGER and\nrestored some HP!";
 			obj_fightcontroller.player_hp += (obj_fightcontroller.player_maxhp / 4);
 			break;
+		case "":
+			obj_textbox.text = _base_name + " did nothing!";
+			break;
 		case "HUBRIS\nHUFF":
 			obj_textbox.text = _base_name + " used " + _move_name + "!";
 			obj_fightcontroller.hubris += 2;

@@ -13,6 +13,7 @@ enum ELEMENTS
 }
 
 total_funds = 7000;
+victories = 0;
 
 base = BASES.DRAGON;
 slot1 = noone;
@@ -32,16 +33,16 @@ catalog = [
 		{name : "ANODE\nRIG", tooltip : "This will give those little tricksters a shock!\nTargets a single Gnome for Electric damage.", element : 3, cost : 2500, selects_target : true}
 	],
 	[
-		{name : "LAVA\nWAVE", tooltip : "Let's watch the world burn down.\nDeals Fire damage to all enemies.", element : 1, cost : 5500, selects_target : false},
-		{name : "GROUND\nROD", tooltip : "This move will surely stun each of those cone heads.\nDeals Electric damage to every enemy.", element : 3, cost : 5500, selects_target : false},
-		{name : "OVER-\nWINTER", tooltip : "Targets every Gnome for Ice damage.", element : 2, cost : 5500, selects_target : false},
+		{name : "LAVA\nWAVE", tooltip : "Let's watch the world burn down.\nDeals Fire damage to all enemies.", element : 1, cost : 6000, selects_target : false},
+		{name : "GROUND\nROD", tooltip : "This move will surely stun each of those cone heads.\nDeals Electric damage to every enemy.", element : 3, cost : 6000, selects_target : false},
+		{name : "OVER-\nWINTER", tooltip : "Targets every Gnome for Ice damage.", element : 2, cost : 6000, selects_target : false},
 		{name : "CLAPPING\nCRASH", tooltip : "Slap those Gnomes straight.\nDeals Neutral damage to a single Gnome.", element : 0, cost : 2000, selects_target : true}
 	],
 	[
 		{name : "HUBRIS\nHUFF", tooltip : "Doubles your attack, while doubling the damage you receive.", element : 0, cost : 3000, selects_target : false},
 		{name : "IRON\nSHIELD", tooltip : "Reduces received damage by 30%", element : 0, cost : 3500, selects_target : false},
 		{name : "PICK-\nPOCKET", tooltip : "We're the bad guys, so we get to use some bad tactics.\nThis move steals cash from the opposing party,\nat the cost of less prize money from a victory.", element : 0, cost : 3000, selects_target : false},
-		{name : "GIGA\nSLASH", tooltip : "Slice 'n' dicin' time!\nDeals Neutral damage to all Gnomes.", element : 0, cost : 6000, selects_target : false}
+		{name : "GIGA\nSLASH", tooltip : "Slice 'n' dicin' time!\nDeals Neutral damage to all Gnomes.", element : 0, cost : 5000, selects_target : false}
 	]
 ];
 
@@ -56,7 +57,7 @@ do
 }
 until _weak != _str;
 
-var _rewards = [1000, 2500, 4000, 5500]
+var _rewards = [500, 1250, 2000, 3500]
 var _allies = irandom_range(0, 3);
 next_encounter = {
 	strength : _str,

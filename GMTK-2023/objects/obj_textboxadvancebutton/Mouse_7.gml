@@ -43,19 +43,20 @@ if obj_fightcontroller.iron_shield > 0
 	obj_fightcontroller.iron_shield --;
 }
 
+if win || lose
+{
+	randomize_next_encounter();
+	if (win) obj_globalcontroller.victories++;
+	room_goto(rm_mainmenu);
+}
+
 if instance_number(obj_gnome) == 0 && !win
 {	
-	obj_textbox.text = "You won! Here's " + string(obj_globalcontroller.next_encounter.reward) + "G\n, as promised!";
+	obj_textbox.text = "You won! Here's " + string(obj_globalcontroller.next_encounter.reward) + "G, as promised!";
 	obj_globalcontroller.total_funds += obj_globalcontroller.next_encounter.reward;
 	audio_stop_sound(snd_battle);
 	audio_play_sound(snd_results, 0, true);
 	win = true;
-}
-
-if win || lose
-{
-	randomize_next_encounter();
-	room_goto(rm_mainmenu);
 }
 
 if obj_fightcontroller.player_hp <= 0 && !lose
@@ -66,3 +67,4 @@ if obj_fightcontroller.player_hp <= 0 && !lose
 	audio_play_sound(snd_results, 0, true);
 	lose = true;
 }
+

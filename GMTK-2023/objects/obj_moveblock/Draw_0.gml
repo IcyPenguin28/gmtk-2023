@@ -26,3 +26,6 @@ draw_set_font(fnt_tooltip);
 draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
 draw_text(x - 16, y, properties.name);
+
+draw_set_font(fnt_tooltipsmall);
+draw_text(x - 65, y+24, string(properties.cost)+"G");

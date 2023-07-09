@@ -13,6 +13,12 @@ if room == rm_mainmenu
 	draw_set_color(c_white);
 	draw_text(280,70, string(obj_globalcontroller.total_funds));
 
+	//victories counter
+	draw_set_color(c_black);
+	draw_text(256,123, "Wins: "+string(obj_globalcontroller.victories));
+	draw_set_color(c_white);
+	draw_text(256,120, "Wins: "+string(obj_globalcontroller.victories));
+
 	// Display Heroes' Strength
 	draw_set_color(c_black);
 	draw_text(256, 259, "Heroes' Strength:");
