@@ -53,6 +53,7 @@
     {"name":"rm_shop","order":4,"path":"rooms/rm_shop/rm_shop.yy",},
     {"name":"spr_button","order":5,"path":"sprites/spr_button/spr_button.yy",},
     {"name":"spr_moveblock_blue","order":1,"path":"sprites/spr_moveblock_blue/spr_moveblock_blue.yy",},
+    {"name":"spr_logo","order":10,"path":"sprites/spr_logo/spr_logo.yy",},
     {"name":"obj_moveblock_menu","order":9,"path":"objects/obj_moveblock_menu/obj_moveblock_menu.yy",},
     {"name":"spr_firedragon","order":1,"path":"sprites/spr_firedragon/spr_firedragon.yy",},
     {"name":"spr_errorbase","order":2,"path":"sprites/spr_errorbase/spr_errorbase.yy",},

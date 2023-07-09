@@ -61,7 +61,9 @@ function execute_player_move(_move_name){
 			for (var i = 0; i < array_length(obj_fightcontroller.targets); i++;)
 			{
 				// Calculate damage
-				var _calced_dmg = 25;
+				var _calced_dmg = 55*(random_range(0.85,1));
+				//multidamage moves do less
+				if (!playeraction.selects_target) _calced_dmg /= 1.5;
 				
 				// Group weakness, super effective
 				if obj_fightcontroller.playeraction.element == obj_fightcontroller.group_weakness

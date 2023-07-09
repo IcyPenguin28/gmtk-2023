@@ -42,7 +42,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.6.0.89",
+    "IDEVersion": "2023.2.1.75",
   },
   "resources": [
     {"id":{"name":"obj_backbutton","path":"objects/obj_backbutton/obj_backbutton.yy",},},
@@ -76,6 +76,7 @@
     {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},},
     {"id":{"name":"spr_gnome_normal","path":"sprites/spr_gnome_normal/spr_gnome_normal.yy",},},
     {"id":{"name":"spr_moveblock_blue","path":"sprites/spr_moveblock_blue/spr_moveblock_blue.yy",},},
+    {"id":{"name":"spr_logo","path":"sprites/spr_logo/spr_logo.yy",},},
     {"id":{"name":"obj_moveblock_menu","path":"objects/obj_moveblock_menu/obj_moveblock_menu.yy",},},
     {"id":{"name":"spr_baseframe","path":"sprites/spr_baseframe/spr_baseframe.yy",},},
     {"id":{"name":"spr_firedragon","path":"sprites/spr_firedragon/spr_firedragon.yy",},},
