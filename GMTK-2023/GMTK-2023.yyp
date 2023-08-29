@@ -4,6 +4,8 @@
   "name": "GMTK-2023",
   "AudioGroups": [
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},
+    {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"music","targets":-1,},
+    {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"sfx","targets":-1,},
   ],
   "configs": {
     "children": [],
@@ -82,6 +84,7 @@
     {"id":{"name":"obj_moveblock_menu","path":"objects/obj_moveblock_menu/obj_moveblock_menu.yy",},},
     {"id":{"name":"spr_baseframe","path":"sprites/spr_baseframe/spr_baseframe.yy",},},
     {"id":{"name":"spr_firedragon","path":"sprites/spr_firedragon/spr_firedragon.yy",},},
+    {"id":{"name":"obj_damagepopup","path":"objects/obj_damagepopup/obj_damagepopup.yy",},},
     {"id":{"name":"obj_gnome","path":"objects/obj_gnome/obj_gnome.yy",},},
     {"id":{"name":"spr_errorbase","path":"sprites/spr_errorbase/spr_errorbase.yy",},},
     {"id":{"name":"obj_textboxadvancebutton","path":"objects/obj_textboxadvancebutton/obj_textboxadvancebutton.yy",},},

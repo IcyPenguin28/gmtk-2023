@@ -95,15 +95,21 @@ function execute_player_move(_move_name){
 				// Deal the calced damage
 				targets[i].hp -= _calced_dmg;
 				
+				var _target = targets[i];
+				var _popup = instance_create_depth(_target.x,_target.y,0,obj_damagepopup)
+				_popup.value = round(_calced_dmg);
+				
 				switch (_type) {
 					case 0:
 						audio_play_sound(snd_hit,2,false);
 						break;
 					case -1:
 						audio_play_sound(snd_weakattack,2,false);
+						_popup.color = c_red
 						break;
 					case 1:
 						audio_play_sound(snd_superattack,2,false);
+						_popup.color = c_green
 						break;
 				}
 				

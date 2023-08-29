@@ -58,6 +58,7 @@
     {"name":"spr_logo","order":10,"path":"sprites/spr_logo/spr_logo.yy",},
     {"name":"obj_moveblock_menu","order":9,"path":"objects/obj_moveblock_menu/obj_moveblock_menu.yy",},
     {"name":"spr_firedragon","order":1,"path":"sprites/spr_firedragon/spr_firedragon.yy",},
+    {"name":"obj_damagepopup","order":14,"path":"objects/obj_damagepopup/obj_damagepopup.yy",},
     {"name":"spr_errorbase","order":2,"path":"sprites/spr_errorbase/spr_errorbase.yy",},
     {"name":"obj_textboxadvancebutton","order":6,"path":"objects/obj_textboxadvancebutton/obj_textboxadvancebutton.yy",},
     {"name":"remove_purchased_items","order":1,"path":"scripts/remove_purchased_items/remove_purchased_items.yy",},
