@@ -5,10 +5,20 @@
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
-var xx = 320;
-var yy = 32;
-var _padding = 24;
-draw_healthbar(xx - display_get_gui_width() / 2 + _padding, yy + 32, x + display_get_gui_width() / 2 - _padding, yy, (player_hp / player_maxhp) * 100, c_black, c_red, c_red, 0, true, false);
+var xx = 96;
+var yy = 60;
+var _width = 222
+var _height = 25;
+var _red = #e43b44
+var _green = #3e8948
+
+player_hp_display = player_hp_display- (player_hp_display-(player_hp / player_maxhp)) * .1
+
+draw_rectangle_color(xx+32,yy+10,xx+_width,yy+_height,_red,_red,_red,_red,false)
+draw_rectangle_color(xx+32,yy+10,xx+(_width*player_hp_display),yy+_height,_green,_green,_green,_green,false)
+draw_sprite(spr_bosshp,0,16,16)
+draw_sprite(spr_bossicons,obj_globalcontroller.base,16+6,16+6)
+//draw_sprite(spr_bosshpseperator,-1,)
 
 if position_meeting(mouse_x, mouse_y, obj_gnome)
 {

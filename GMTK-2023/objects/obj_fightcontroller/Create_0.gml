@@ -56,6 +56,8 @@ player_hp = player_maxhp;
 hubris = 0;	// Hubris multiplier. Used in attack and defense calculations
 iron_shield = 0;	// Will become 3 if player uses iron shield. Every turn, it goes down by 1. If its at 0, it will not give you the defense boost.
 
+player_hp_display = 1; //used to animate the healthbar
+
 active_enemies = [];	// Populated with the for loop below. Determines which enemies can still attack (i.e. which ones aren't dead af).
 
 for (var i = 0; i < instance_number(obj_gnome); i++;)
