@@ -16,6 +16,9 @@ switch type
 	case ELEMENTS.ELEC:
 		sprite_index = spr_gnome_elec;
 		break;
+	case ELEMENTS.KNIGHT:
+		sprite_index = spr_gnome_knight;
+		break;
 }
 
 if hp <= 0

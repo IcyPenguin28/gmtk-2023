@@ -17,6 +17,7 @@ function execute_player_move(_move_name){
 			break;
 		default:
 			_base_name = "PLAYER";
+			
 			break;
 	}
 	
@@ -66,6 +67,7 @@ function execute_player_move(_move_name){
 			break;
 		default:
 			obj_textbox.text = _base_name + " used " + _move_name + "!";
+			show_debug_message("Enemies targeted: " + string(array_length(targets)))
 			
 			for (var i = 0; i < array_length(obj_fightcontroller.targets); i++;)
 			{
@@ -73,8 +75,8 @@ function execute_player_move(_move_name){
 				var _calced_dmg = 55*(random_range(0.85,1));
 				var _type = 0;
 				//multidamage moves do less
-				if (!playeraction.selects_target && obj_globalcontroller.base != BASES.YETI) _calced_dmg *= 1.33;
-				if (!playeraction.selects_target && obj_globalcontroller.base != BASES.DRAGON) {
+				if (array_length(targets) == 1 && obj_globalcontroller.base == BASES.YETI) _calced_dmg *= 1.33;
+				if (array_length(targets) > 1) {
 					_calced_dmg /= 1.5;
 				}
 				// Group weakness, super effective
@@ -91,7 +93,12 @@ function execute_player_move(_move_name){
 					_type = -1;
 					_calced_dmg = floor(_calced_dmg);
 				}
-				
+				//Knight resistance
+				if (targets[i].type == ELEMENTS.KNIGHT && _type != 1) {
+					_type = -1;
+					_calced_dmg *= 0.2;
+					_calced_dmg = floor(_calced_dmg);
+				}
 				if obj_fightcontroller.hubris > 0
 				{
 					_calced_dmg *= hubris;

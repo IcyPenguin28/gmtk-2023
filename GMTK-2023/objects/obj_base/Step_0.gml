@@ -4,7 +4,7 @@
 switch active_base
 {
 	case BASES.DRAGON:
-		tooltip = "FIRE DRAGON:\nResists fire attacks, but is weak to electricity.\nMulti Target moves are stronger."
+		tooltip = "FIRE DRAGON:\nResists fire attacks, but is weak to electricity.\nCan occasionally dodge attacks."
 		break;
 	case BASES.YETI:
 		tooltip = "YETI:\nResists ice attacks, but is weak to fire.\nSingle Target moves are stronger."

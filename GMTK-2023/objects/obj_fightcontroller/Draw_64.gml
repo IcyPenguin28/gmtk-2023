@@ -7,15 +7,15 @@ draw_set_valign(fa_middle);
 
 var xx = 96;
 var yy = 60;
-var _width = 222
+var _width = 190
 var _height = 25;
 var _red = #e43b44
 var _green = #3e8948
 
 player_hp_display = clamp(player_hp_display- (player_hp_display-(player_hp / player_maxhp)) * .1,0,1)
 
-draw_rectangle_color(xx+32,yy+10,xx+_width,yy+_height,_red,_red,_red,_red,false)
-draw_rectangle_color(xx+32,yy+10,xx+(_width*player_hp_display),yy+_height,_green,_green,_green,_green,false)
+draw_rectangle_color(xx+32,yy+10,xx+32+_width,yy+_height,_red,_red,_red,_red,false)
+draw_rectangle_color(xx+32,yy+10,xx+32+(_width*player_hp_display),yy+_height,_green,_green,_green,_green,false)
 draw_sprite(spr_bosshp,0,16,16)
 draw_sprite(spr_bossicons,obj_globalcontroller.base,16+6,16+6)
 

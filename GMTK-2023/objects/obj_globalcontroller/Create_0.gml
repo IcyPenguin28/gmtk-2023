@@ -9,7 +9,8 @@ enum ELEMENTS
 	NORMAL,
 	FIRE,
 	ICE,
-	ELEC
+	ELEC,
+	KNIGHT
 }
 
 total_funds = 7000;

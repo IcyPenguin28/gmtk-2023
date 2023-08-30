@@ -28,10 +28,16 @@ function execute_enemy_move(_enemy){
 				_name = "ELECTRIC GNOME";
 				_attack = "HI-VOLTAGE";
 				break;
+			case ELEMENTS.KNIGHT:
+				_name = "KNIGHT GNOME";
+				_attack = "VALIANT STRIKE";
+				break;
 		}
 	
+		var _dodged = obj_globalcontroller.base == BASES.DRAGON && random_range(0,6) < 1;
+		
 		obj_textbox.text = _name + " used " + _attack + "!";
-	
+		if (_dodged) obj_textbox.text  += " ... and missed !";
 		// Calculate damage
 		var _calced_dmg = 25;
 		var _type = 0;
@@ -67,12 +73,21 @@ function execute_enemy_move(_enemy){
 			_calced_dmg = floor(_calced_dmg);
 		}
 		
+		//dragon dodge chance
+		if _dodged {
+			_calced_dmg = 0;
+			_type = -2;
+		}
+		
 		switch (_type) {
 			case 0:
 				audio_play_sound(snd_hit,2,false);
 				break;
 			case -1:
 				audio_play_sound(snd_weakattack,2,false);
+				break;
+			case -2:
+				audio_play_sound(snd_nullattack,2,false);
 				break;
 			case 1:
 				audio_play_sound(snd_superattack,2,false);
