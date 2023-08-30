@@ -29,7 +29,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_baseframe",
+    "path": "sprites/spr_baseframe/spr_baseframe.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

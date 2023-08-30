@@ -38,11 +38,6 @@ with (obj_textbox)
 	}
 }
 
-if obj_fightcontroller.iron_shield > 0
-{
-	obj_fightcontroller.iron_shield --;
-}
-
 if win || lose
 {
 	randomize_next_encounter();

@@ -20,6 +20,11 @@ function execute_player_move(_move_name){
 			break;
 	}
 	
+	if obj_fightcontroller.iron_shield > 0
+	{
+		obj_fightcontroller.iron_shield --;
+	}
+	
 	switch (_move_name)
 	{
 		// Wacky moves first, the rest (aka damaging moves) have the same basic structure and thus can be used as the default case

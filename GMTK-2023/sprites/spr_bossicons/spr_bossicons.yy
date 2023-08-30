@@ -14,8 +14,8 @@
   "For3D": false,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f3207719-ba4f-47af-bfee-e728631d722b",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2d60e4a6-ab60-4589-9cb0-bd2878ef09e6",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"32540d09-9119-42f9-9c2a-7faaa37421af",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2d60e4a6-ab60-4589-9cb0-bd2878ef09e6",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -57,8 +57,8 @@
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f3207719-ba4f-47af-bfee-e728631d722b","path":"sprites/spr_bossicons/spr_bossicons.yy",},},},"Disabled":false,"id":"c1aba518-e21c-43de-afea-e6b7149fccff","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2d60e4a6-ab60-4589-9cb0-bd2878ef09e6","path":"sprites/spr_bossicons/spr_bossicons.yy",},},},"Disabled":false,"id":"423326c8-cdc0-4ec9-bb48-9dac00eb03df","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"32540d09-9119-42f9-9c2a-7faaa37421af","path":"sprites/spr_bossicons/spr_bossicons.yy",},},},"Disabled":false,"id":"e66d59ac-b159-4f81-9d52-0a98d6528781","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"32540d09-9119-42f9-9c2a-7faaa37421af","path":"sprites/spr_bossicons/spr_bossicons.yy",},},},"Disabled":false,"id":"e66d59ac-b159-4f81-9d52-0a98d6528781","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2d60e4a6-ab60-4589-9cb0-bd2878ef09e6","path":"sprites/spr_bossicons/spr_bossicons.yy",},},},"Disabled":false,"id":"423326c8-cdc0-4ec9-bb48-9dac00eb03df","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
