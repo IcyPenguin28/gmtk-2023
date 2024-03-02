@@ -22,6 +22,8 @@ slot2 = noone;
 
 unlocked_moves = [];
 
+slot1Last = noone;
+slot2Last = noone;
 
 page = 0;
 
@@ -34,16 +36,22 @@ catalog = [
 		{name : "ANODE\nRIG", tooltip : "This will give those little tricksters a shock!\nTargets a single Gnome for Electric damage.", element : 3, cost : 2500, selects_target : true}
 	],
 	[
-		{name : "LAVA\nWAVE", tooltip : "Let's watch the world burn down.\nDeals Fire damage to all enemies.", element : 1, cost : 6000, selects_target : false},
+		{name : "GIGA\nSLASH", tooltip : "Slice 'n' dicin' time!\nDeals Neutral damage to all Gnomes.", element : 0, cost : 5000, selects_target : false},
 		{name : "GROUND\nROD", tooltip : "This move will surely stun each of those cone heads.\nDeals Electric damage to every enemy.", element : 3, cost : 6000, selects_target : false},
-		{name : "OVER-\nWINTER", tooltip : "Targets every Gnome for Ice damage.", element : 2, cost : 6000, selects_target : false},
-		{name : "GIGA\nSLASH", tooltip : "Slice 'n' dicin' time!\nDeals Neutral damage to all Gnomes.", element : 0, cost : 5000, selects_target : false}
+		{name : "LAVA\nWAVE", tooltip : "Let's watch the world burn down.\nDeals Fire damage to all enemies.", element : 1, cost : 6000, selects_target : false},
+		{name : "OVER-\nWINTER", tooltip : "Targets every Gnome for Ice damage.", element : 2, cost : 6000, selects_target : false}
 	],
 	[
 		{name : "CHEESE-\nBURGER", tooltip : "Mmmmmm...\nRestores 25% HP.", element : 0, cost : 3500, selects_target : false},
 		{name : "HUBRIS\nHUFF", tooltip : "Doubles your attack, while doubling the damage you receive.", element : 0, cost : 3000, selects_target : false},
 		{name : "IRON\nSHIELD", tooltip : "Reduces received damage by 30%", element : 0, cost : 3500, selects_target : false},
 		{name : "PICK-\nPOCKET", tooltip : "We're the bad guys, so we get to use some bad tactics.\nThis move steals cash from the opposing party,\nat the cost of less prize money from a victory.", element : 0, cost : 3000, selects_target : false}
+	],
+	[
+		{name : "random", tooltip : "Selects a random move out of every purchased move.\nYour foes will be just as confused as you are!", element : 0, cost : 7500, selects_target : false},
+		{name : "stomp", tooltip : "Has a chance to instantly kill a enemy", element : 0, cost : 5500, selects_target : true},
+		{name : "???", tooltip : "recoil", element : 0, cost : 5500, selects_target : true},
+		{name : "???", tooltip : "???", element : 0, cost : 9999, selects_target : true}
 	]
 ];
 

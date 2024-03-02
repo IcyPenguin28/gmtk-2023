@@ -8,8 +8,4 @@ if room == rm_shop
 	remove_basketed_items();
 }
 
-if room == rm_mainmenu
-{
-	slot1 = inst_58604B20.properties;
-	slot2 = inst_32E381CE.properties;
-}
+show_debug_message(slot1)

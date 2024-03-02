@@ -35,29 +35,31 @@ function execute_enemy_move(_enemy){
 		}
 	
 		var _dodged = obj_globalcontroller.base == BASES.DRAGON && random_range(0,6) < 1;
-		
+		var _super = obj_globalcontroller.base == BASES.DRAGON && _enemy.type == ELEMENTS.ELEC ||
+			obj_globalcontroller.base == BASES.YETI && _enemy.type == ELEMENTS.FIRE ||
+			obj_globalcontroller.base == BASES.SLIME && _enemy.type == ELEMENTS.ICE;
+		var _weak = obj_globalcontroller.base == BASES.DRAGON && _enemy.type == ELEMENTS.FIRE ||
+			obj_globalcontroller.base == BASES.YETI && _enemy.type == ELEMENTS.ICE ||
+			obj_globalcontroller.base == BASES.SLIME && _enemy.type == ELEMENTS.ELEC;
 		obj_textbox.text = _name + " used " + _attack + "!";
-		if (_dodged) obj_textbox.text  += " ... and missed !";
 		// Calculate damage
-		var _calced_dmg = 25;
+		var _calced_dmg = 25 + (obj_globalcontroller.victories/1.5);
 		var _type = 0;
 		// Super effective
-		if obj_globalcontroller.base == BASES.DRAGON && _enemy.type == ELEMENTS.ELEC ||
-			obj_globalcontroller.base == BASES.YETI && _enemy.type == ELEMENTS.FIRE ||
-			obj_globalcontroller.base == BASES.SLIME && _enemy.type == ELEMENTS.ICE
+		if _super
 		{
 			_calced_dmg *= 1.5;
 			_type = 1;
 			_calced_dmg = floor(_calced_dmg);
+			obj_textbox.text  += " You take critical damage!";
 		}
 		// Not very effective
-		else if obj_globalcontroller.base == BASES.DRAGON && _enemy.type == ELEMENTS.FIRE ||
-			obj_globalcontroller.base == BASES.YETI && _enemy.type == ELEMENTS.ICE ||
-			obj_globalcontroller.base == BASES.SLIME && _enemy.type == ELEMENTS.ELEC
+		else if _weak
 		{
 			_calced_dmg *= 0.5;
 			_type = -1;
 			_calced_dmg = floor(_calced_dmg);
+			obj_textbox.text  += " How weak.";
 		}
 				
 		if obj_fightcontroller.hubris > 0
@@ -77,6 +79,7 @@ function execute_enemy_move(_enemy){
 		if _dodged {
 			_calced_dmg = 0;
 			_type = -2;
+			obj_textbox.text  += " ... and missed !";
 		}
 		
 		switch (_type) {
@@ -94,6 +97,6 @@ function execute_enemy_move(_enemy){
 				break;
 		}
 		// Deal the calced damage
-		obj_fightcontroller.player_hp -= _calced_dmg;
+		obj_fightcontroller.player_hp -= floor(_calced_dmg);
 	}
 }

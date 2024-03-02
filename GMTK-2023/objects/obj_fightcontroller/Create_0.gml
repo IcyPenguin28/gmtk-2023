@@ -14,7 +14,7 @@ for (var i = 0; i < _encounter.allies; i++;) {
 	//this confirms a party size of 3 or 4 will have at least 2 of strength element
 	var _type = _encounter.strength;
 	if (irandom_range(0,3) && i != 2) _type = irandom_range(0,3);
-	if (i > 0 && obj_globalcontroller.victories > 10 && random_range(0,4) < 1) _type = ELEMENTS.KNIGHT
+	if (i > 0 && obj_globalcontroller.victories > 10 && random_range(0,4+(obj_globalcontroller.victories/20)) > 3) _type = ELEMENTS.KNIGHT
 	//add to  array
 	array_push(enemies,new create_gnome(_type));
 }

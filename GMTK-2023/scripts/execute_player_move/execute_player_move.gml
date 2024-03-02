@@ -45,6 +45,9 @@ function execute_player_move(_move_name){
 			obj_textbox.text = _base_name + " used " + _move_name + "!\nDefense up for 3 turns starting now.";
 			obj_fightcontroller.iron_shield = 3;
 			break;
+		case "random":
+		
+			break;
 		case "PICK-\nPOCKET":
 			var _stolen = floor(obj_globalcontroller.next_encounter.reward * 0.2);
 			if (obj_globalcontroller.next_encounter.reward - _stolen <= 0)
@@ -85,6 +88,7 @@ function execute_player_move(_move_name){
 					_calced_dmg *= 1.5;
 					_type = 1;
 					_calced_dmg = floor(_calced_dmg);
+					obj_textbox.text  += " It's super strong!";
 				}
 				// Same-type, not very effective
 				else if targets[i].type == obj_fightcontroller.playeraction.element
@@ -92,12 +96,14 @@ function execute_player_move(_move_name){
 					_calced_dmg *= 0.5;
 					_type = -1;
 					_calced_dmg = floor(_calced_dmg);
+					obj_textbox.text  += " It didn't do much.";
 				}
 				//Knight resistance
 				if (targets[i].type == ELEMENTS.KNIGHT && _type != 1) {
 					_type = -1;
 					_calced_dmg *= 0.2;
 					_calced_dmg = floor(_calced_dmg);
+					obj_textbox.text  += " The Knight resisted the attack.";
 				}
 				if obj_fightcontroller.hubris > 0
 				{

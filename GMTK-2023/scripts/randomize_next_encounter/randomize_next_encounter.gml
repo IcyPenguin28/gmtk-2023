@@ -14,8 +14,8 @@ function randomize_next_encounter(){
 		}
 		until _weak != _str;
 
-		var _rewards = [1000, 2500, 4000, 5500];
-		var _allies = irandom_range(0, 3);
+		var _rewards = [750, 2250, 3000, 4500];
+		var _allies = clamp(irandom_range(0, 3) + (obj_globalcontroller.victories/10),0,3);
 		next_encounter = {
 			strength : _str,
 			weakness : _weak,

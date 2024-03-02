@@ -27,3 +27,4 @@ else
 		selects_target : false
 	}
 }
+//sset block to last equipped if that exists.
